@@ -7,7 +7,7 @@ def count(coll, method):
     res = coll.count_documents({"method": method})
     return res
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     client = MongoClient('mongodb://127.0.0.1:27017')
     nginx_collection = client.logs.nginx
 
