@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""nginx logs statistics"""
+""" nginx logs statistics """
 from pymongo import MongoClient
 
 def count(coll, method):
-    """count da """
+    """ gormursen documenti count da """
     res = coll.count_documents({"method": method})
     return res
 
